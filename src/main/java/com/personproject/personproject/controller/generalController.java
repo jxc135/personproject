@@ -23,7 +23,6 @@ public class generalController {
 	@GetMapping("/getApiInfo")
 	public ResponseEntity<?> getApiInfo(@RequestParam (name="name", defaultValue = "london") String location){
 	
-		String url = "http://api.openweathermap.org/data/2.5/forecast?q="+location+"&appid=3e59df4403ab714e43c3be93b1d8dda9";
 		RestTemplate restTemplate = new RestTemplate();
 		String result = restTemplate.getForObject(url, String.class);
 		

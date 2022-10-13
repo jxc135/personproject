@@ -5,7 +5,6 @@ import java.util.List;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Service;
 import com.personproject.personproject.entities.Person;
-import com.personproject.personproject.repository.PersonRepository;
 
 @Service
 public class PersonService {
